@@ -1,0 +1,140 @@
+/* configuracion de fuentes*/
+*{
+    font-family: electrolux_sanssemibold;
+}
+
+/*configuracion de variables */
+:root{
+    --electrolux-bg-primary: #193159; 
+    --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-text-primary: #041f4d; 
+}
+
+/*configuracion de colores con variables*/
+.bg-electrolux-primary{
+    background: var(--electrolux-bg-primary);
+}
+.bg-electrolux-gray{
+    background: var(--electrolux-bg-gray);
+}
+.text-electrolux-primary{
+    color: var(--electrolux-text-primary);
+}
+
+/*configuracion de clases para fuentes */
+.font-semibold   {font-family: "electrolux_sanssemibold";}
+.font-light      {font-family: "electrolux_sanslight";}
+.font-regular    {font-family: "electrolux_sansregular";}
+.font-bold       {font-family: "electrolux_sansbold";}
+
+bold{
+    font-family: "electrolux_sansbold";
+}
+
+.display-3{
+    line-height: 1;
+}
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover{
+    object-fit: cover;
+}
+
+.electrolux__header{
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity: .95;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--electrolux-bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.electrolux__header div{
+    margin-left: 3rem;
+    max-height: 90%;
+}
+
+.electrolux__header div img{
+    max-height: 50px;
+}
+
+.imgBackground{
+    height: 39rem;
+}
+
+.imgBackground > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.backgroundSection .textBox{
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+}
+
+/*FIN CSS PARA BANNER PRINCIPAL ----------------------------------------------*/
+
+/*CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+.cardsCirculares img{
+    width: 100px;
+    height: 100px;
+}
+
+.cardsCirculares .col-12:nth-of-type(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+
+
+/*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+
+
+@media screen and (max-width: 767.98px) {
+
+
+    /*MEDIA QUERY PARA BANNER PRINCIPAL ------------------*/
+    
+    .imgBackground{
+        height: 26rem;
+    }
+
+    .backgroundSection .textBox{
+        position: initial;
+    }
+
+    /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
+
+
+    .cardsCirculares .col-12:nth-of-type(2){
+        border-left: 0;
+        border-right: 0;
+    }   
+    .cardsCirculares img{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+
+
+
