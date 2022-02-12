@@ -8,11 +8,19 @@
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
     --electrolux-text-primary: #041f4d; 
+    --electrolux-bg-primary-darken: #041e4d; 
+    --electrolux-bg-primary-light: #dde8ea; 
 }
 
 /*configuracion de colores con variables*/
 .bg-electrolux-primary{
     background: var(--electrolux-bg-primary);
+}
+.bg-electrolux-primary-darken{
+    background: var(--electrolux-bg-primary-darken);
+}
+.bg-electrolux-primary-light{
+    background: var(--electrolux-bg-primary-light);
 }
 .bg-electrolux-gray{
     background: var(--electrolux-bg-gray);
@@ -35,8 +43,6 @@ bold{
     line-height: 1;
 }
 
-/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
-
 .img{
     max-width: 100%;
     height: auto;
@@ -45,6 +51,12 @@ bold{
 .img-cover{
     object-fit: cover;
 }
+
+/* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
+
 
 .electrolux__header{
     position: fixed;
@@ -99,11 +111,63 @@ bold{
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-
-
-
-
 /*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+
+/* CSS PARA SECCION TEXTO IZQUIERDA - IMAGEN DERECHA */
+
+.containerImgCortada{
+    min-height: 600px;
+    max-height: 615px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*FIN CSS SECCION TEXTO IZQ - IMAGEN DER */
+
+/* CSS PARA SECCION DE CARDS EXPANSIBLES */
+
+.expansibleCards__card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.expansibleCards_img .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.expansibleCards__icons{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+
+.expansibleCards__icons > div.bg-electrolux-primary-darken{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.expansibleCards__icons > div.bg-electrolux-primary-darken img{
+    transform: scale(.5);
+}
+
+
 
 
 
@@ -122,6 +186,7 @@ bold{
 
     /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
 
+    /*MEDIA QUERY PARA SECCION CON IMGS CIRCULARES */
 
     .cardsCirculares .col-12:nth-of-type(2){
         border-left: 0;
@@ -132,7 +197,44 @@ bold{
         height: 300px;
     }
 
+    /*FIN MEDIA QUERY SECCION CON IMGS CIRCULARES */
+
+    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    .expansibleCards__card p.fs-6.text-electrolux-primary{
+        font-size: 2.5rem !important;
+    }
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 1.2rem !important;
+    }
+
+    /*FIN MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
 }
+
+@media screen and (max-width: 995px) {
+
+    /*MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+    .containerImgCortada{
+        min-height: initial;
+        max-height: initial;
+        height: auto;
+        overflow: initial;
+    }
+
+    .containerImgCortada div.col-md-6{
+        width: 100%;
+    }
+
+    .containerImgCortada div.row{
+        flex-direction: column-reverse;
+    }
+
+    /*FIN MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+}
+
 
 
 

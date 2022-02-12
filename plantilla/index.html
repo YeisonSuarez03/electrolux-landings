@@ -17,8 +17,9 @@
     <!--Fuentes-->
     <link href="./assets/fonts/stylesheet.css" rel="stylesheet" />
 
-    <!--CSS custom-->
+    <!--CSS Base-->
     <link href="./css/index.css" rel="stylesheet" />
+
   </head>
   <body>
     <header class="electrolux__header">
@@ -80,7 +81,7 @@
       <!--FIN SECCION DE IMGS CIRCULARES-->
 
       <!--SECCION TEXTO IZQUIERDA - IMAGEN DERECHA-->
-      <section class="container" style="max-height: 600px;">
+      <section class="container containerImgCortada">
 
         <div class="row">
           <div class="col-md-6 col-12">
@@ -104,7 +105,103 @@
         </div>
 
       </section>
+<!--FIN SECCION TEXTO IZQUIERDA - IMAGEN DERECHA-->
 
+<!--INICIO SECCION CARDS CON IMAGENES EXPANDIBLES-->
+
+    <section class="expansibleCards__section">
+      <div class="row w-100 p-0 m-0">
+        <div class="col-md-4 col-12 p-0 m-0">
+
+          <div class="position-relative">
+            <div class="expansibleCards_img">
+              <!--Aqui va la imagen de fondo-->
+              <img class="img" src="./assets/img/parrillas_individuales.png" alt="Parrillas Individuales">
+            </div>
+            <div style="opacity: 0;" class="expansibleCards__card text-center bg-electrolux-primary-light p-5">
+              <p class="fs-6 font-semibold mb-3 text-electrolux-primary">Parrillas individuales</span>
+              <p class="text-electrolux-primary font-regular">Cuenta con parrillas independientes que facilitan y agilizan su limpieza.</p>
+            </div>
+            <div class="expansibleCards__icons">
+              <div class="bg-electrolux-primary-darken">
+                <img class="plus" src="./assets/img/plus.png" alt="plus">
+                <img class="times" style="display: none;" src="./assets/img/times.png" alt="times">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-md-4 col-12 p-0 m-0">
+
+          <div class="position-relative">
+            <div class="expansibleCards_img">
+              <!--Aqui va la imagen de fondo-->
+              <img class="img" src="./assets/img/timer_sonoro_plus.png" alt="Timer Sonoro">
+            </div>
+            <div style="opacity: 0;" class="expansibleCards__card text-center bg-electrolux-primary-light p-5">
+              <p class="fs-6 font-semibold mb-3 text-electrolux-primary">Timer Sonoro</span>
+              <p class="text-electrolux-primary font-regular">Conoce cuando tu comida está lista para servir.</p>
+            </div>
+            <div class="expansibleCards__icons">
+              <div class="bg-electrolux-primary-darken">
+                <img class="plus" src="./assets/img/plus.png" alt="plus">
+                <img class="times" style="display: none;" src="./assets/img/times.png" alt="times">
+              </div>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+        <div class="col-md-4 col-12 p-0 m-0">
+
+          <div class="position-relative">
+            <div class="expansibleCards_img">
+              <!--Aqui va la imagen de fondo-->
+              <img class="img" src="./assets/img/grill_electrico_plus.png" alt="grill electrico">
+            </div>
+            <div style="opacity: 0;" class="expansibleCards__card text-center bg-electrolux-primary-light p-md-5 p-4">
+              <p class="fs-6 font-semibold mb-3 text-electrolux-primary">Grill Eléctrico</span>
+              <p class="text-electrolux-primary font-regular">Elige entre hornear, dorar o asar tus alimentos con los diferentes.</p>
+            </div>
+            <div class="expansibleCards__icons">
+              <div class="bg-electrolux-primary-darken">
+                <img class="plus" src="./assets/img/plus.png" alt="plus">
+                <img class="times" style="display: none;" src="./assets/img/times.png" alt="times">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+    <!--SCRIPT PARA FUNCIONALIDAD DE CARDS-->
+    <script>
+      const expansibleIcons = document.querySelectorAll(".expansibleCards__icons");
+      expansibleIcons.forEach(icon => {
+        icon.addEventListener("click", (e) => {
+          //extraemos img con display none
+          let iconInactive = [...icon.firstElementChild.children].filter(img => img.getAttribute("style") === "display: none;")[0];
+          //referencia a card
+          let cardDiv = icon.previousElementSibling;
+          if (iconInactive.getAttribute("class") === "times") {
+            cardDiv.setAttribute("style", "opacity: 1;");
+            iconInactive.setAttribute("style", "display: block");
+            iconInactive.previousElementSibling.setAttribute("style", "display: none;")
+          }else{
+            cardDiv.setAttribute("style", "opacity: 0;");
+            iconInactive.setAttribute("style", "display: block");
+            iconInactive.nextElementSibling.setAttribute("style", "display: none;")
+          }
+        })
+      })
+    </script>
+
+<!--FIN SECCION CARDS CON IMAGENES EXPANDIBLES-->
 
 
     </main>
