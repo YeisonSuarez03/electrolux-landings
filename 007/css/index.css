@@ -1,0 +1,391 @@
+/* configuracion de fuentes*/
+*{
+    font-family: electrolux_sanssemibold;
+}
+
+/*configuracion de variables */
+:root{
+    --electrolux-bg-primary: #193159; 
+    --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-bg-gray-light: #acbac1; 
+    --electrolux-text-primary: #193159; 
+    --electrolux-bg-primary-darken: #041e4d; 
+    --electrolux-bg-primary-light: #dde8ea; 
+}
+
+/*configuracion de colores con variables*/
+.bg-electrolux-primary{
+    background: var(--electrolux-bg-primary);
+}
+.bg-electrolux-primary-darken{
+    background: var(--electrolux-bg-primary-darken);
+}
+.bg-electrolux-primary-light{
+    background: var(--electrolux-bg-primary-light);
+}
+.bg-electrolux-gray{
+    background: var(--electrolux-bg-gray);
+}
+.bg-electrolux-gray-light{
+    background: var(--electrolux-bg-gray-light);
+}
+.text-electrolux-primary{
+    color: var(--electrolux-text-primary);
+}
+
+/*configuracion de clases para fuentes */
+.font-semibold   {font-family: "electrolux_sanssemibold";}
+.font-light      {font-family: "electrolux_sanslight";}
+.font-regular    {font-family: "electrolux_sansregular";}
+.font-bold       {font-family: "electrolux_sansbold";}
+
+bold{
+    font-family: "electrolux_sansbold";
+}
+
+.display-3{
+    line-height: 1;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover{
+    object-fit: cover;
+}
+
+/* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
+
+
+.electrolux__header{
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity: .95;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--electrolux-bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.electrolux__header div{
+    margin-left: 3rem;
+    max-height: 90%;
+}
+
+.electrolux__header div img{
+    max-height: 50px;
+}
+
+.imgBackground{
+    height: 39rem;
+}
+
+.imgBackground > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.backgroundSection .textBox{
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+}
+
+/*FIN CSS PARA BANNER PRINCIPAL ----------------------------------------------*/
+
+/*CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+.cardsCirculares img{
+    width: 100px;
+    height: 100px;
+}
+
+.cardsCirculares .col-12:nth-of-type(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+/*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+
+/* CSS PARA SECCION TEXTO IZQUIERDA - IMAGEN DERECHA */
+
+.containerImgCortada{
+    min-height: 600px;
+    max-height: 615px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*FIN CSS SECCION TEXTO IZQ - IMAGEN DER */
+
+/* CSS PARA SECCION DE CARDS EXPANSIBLES */
+
+.expansibleCards__card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.expansibleCards_img .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.expansibleCards__icons{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+
+.expansibleCards__icons > div.bg-electrolux-primary-darken{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.expansibleCards__icons > div.bg-electrolux-primary-darken img{
+    transform: scale(.5);
+}
+
+/*CSS PARA SECCION DE INFORMACION TECNICA */
+
+.informationSection .tit{
+    padding: 10px;
+    border-radius: 10px;
+    gap: 0 10px;
+}
+
+.informationSection ul li{
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.informationSection .tit img{
+    width: 20px;
+}
+
+.detailsInfoDiv{
+    width: 100%;
+    max-width: 13rem;
+}
+
+/*FIN CSS PARA SECCION DE INFORMACION TECNICA */
+
+/*CSS PARA SECCION DE TABS */
+
+.tabsSection{
+    height: 100%;
+}
+
+.tabsSection__height{
+    height: auto; 
+    min-height: calc(400px + 10vw );
+}
+
+
+.tabsSection .tabsSection__tab{
+    height: 100%;
+    width: 100%;
+    max-width: 260px;
+    padding: 2.5em;
+    position: relative;
+}
+
+.tabsSection__tab p{
+    color: #acbac1;
+    z-index: 10;
+    margin: 0%;
+}
+/* codigo para cuando esta activa la tab */
+
+.onActive{
+    position: absolute;
+    top: 15%;
+    left: -200%;
+    opacity: 0;
+    background: var(--electrolux-bg-gray);
+    height: 70%;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    transition: all .4s ease-in-out;
+}
+.tab-active .onActive{
+    left: 0;
+    opacity: 1;
+}
+
+.tabsSection__tab.tab-active p{
+    color: white;
+    font-weight: bold;
+}
+
+.tabsSection__content{
+    transition: all .4s ease-in-out;
+}
+
+
+/*FIN CSS PARA SECCION DE TABS */
+
+
+
+
+
+@media screen and (max-width: 767.98px) {
+
+
+    /*MEDIA QUERY PARA BANNER PRINCIPAL ------------------*/
+    
+    .imgBackground{
+        height: 26rem;
+    }
+
+    .backgroundSection .textBox{
+        position: initial;
+    }
+
+    /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
+
+    /*MEDIA QUERY PARA SECCION CON IMGS CIRCULARES */
+
+    .cardsCirculares .col-12:nth-of-type(2){
+        border-left: 0;
+        border-right: 0;
+    }   
+    .cardsCirculares img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /*FIN MEDIA QUERY SECCION CON IMGS CIRCULARES */
+
+    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    .expansibleCards__card p.fs-6.text-electrolux-primary{
+        font-size: 2.5rem !important;
+    }
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 1.2rem !important;
+    }
+
+    /*FIN MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    /* MEDIA QUERY PARA SECCION DE INFORMACION TECNICA */
+
+    .detailsInfoDiv{
+        max-width: initial;
+    }
+
+    /* FIN MEDIA QUERY PARA SECCION DE INFORMACION TECNICA */
+
+    /* MEDIA QUERY PARA SECCION DE TABS */
+
+    .tabsSection__height{
+        min-height: initial;
+    }
+
+    .tabsSection__height > div:first-child{
+        flex-direction: row !important;
+    }
+
+    .onActive{
+        min-width: initial;
+        max-width: initial;
+        height: 100%;
+        top: 0;
+        left: 0;    
+    }
+
+    .tabsSection__tab{
+        text-align: center;
+        padding: 1.5em !important;
+    }
+
+    .tabsSection__tab p{
+        font-size: 1rem !important;
+    }
+
+    .tabsSection__content .img{
+        width: calc(60% + 10vw);
+    }
+
+
+    /* FIN MEDIA QUERY PARA SECCION DE TABS */
+
+
+
+    
+
+}
+
+@media screen and (max-width: 995px) {
+
+    /*MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+    .containerImgCortada{
+        min-height: initial;
+        max-height: initial;
+        height: auto;
+        overflow: initial;
+    }
+
+    .containerImgCortada div.col-md-6{
+        width: 100%;
+    }
+
+    .containerImgCortada div.row{
+        flex-direction: column-reverse;
+    }
+
+    /*FIN MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+    
+
+    /* MEDIA QUERY PARA SECCION DE TABS */
+
+    .tabsSection .tabsSection__tab{
+        max-width: 200px;
+    }
+    .onActive{
+        min-width: calc(200px + 3vw);
+        max-width: 260px;
+    }
+
+
+    /* FIN MEDIA QUERY PARA SECCION DE TABS */
+
+
+}
+
+
+
+
+
+
