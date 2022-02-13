@@ -7,6 +7,7 @@
 :root{
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-bg-dark: #191820; 
     --electrolux-bg-gray-light: #acbac1; 
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
@@ -25,6 +26,9 @@
 }
 .bg-electrolux-gray{
     background: var(--electrolux-bg-gray);
+}
+.bg-electrolux-dark{
+    background: var(--electrolux-bg-dark);
 }
 .bg-electrolux-gray-light{
     background: var(--electrolux-bg-gray-light);
@@ -171,6 +175,17 @@ bold{
     transform: scale(.5);
 }
 
+/*CSS PARA IMAGEN FONDO COMPLETO */
+
+.imgFondoCompleto .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FIN CSS PARA IMAGEN FONDO COMPLETO */
+
+
+
 /*CSS PARA SECCION DE INFORMACION TECNICA */
 
 .informationSection .tit{
@@ -272,6 +287,11 @@ bold{
 }
 
 
+@media screen and (max-width: 1920px) and (min-width: 1660px) {
+    .imgBackground{
+        height: 46rem;
+    }
+}
 
 
 

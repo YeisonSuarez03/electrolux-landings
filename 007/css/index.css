@@ -7,6 +7,7 @@
 :root{
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-bg-dark: #191820; 
     --electrolux-bg-gray-light: #acbac1; 
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
@@ -25,6 +26,9 @@
 }
 .bg-electrolux-gray{
     background: var(--electrolux-bg-gray);
+}
+.bg-electrolux-dark{
+    background: var(--electrolux-bg-dark);
 }
 .bg-electrolux-gray-light{
     background: var(--electrolux-bg-gray-light);
@@ -58,9 +62,7 @@ bold{
 
 /* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
 
-/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
-
-
+/*HEADER*/
 
 .electrolux__header{
     position: fixed;
@@ -85,6 +87,10 @@ bold{
     max-height: 50px;
 }
 
+/*FIN HEADER --------------------------------------------------*/
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
 .imgBackground{
     height: 39rem;
 }
@@ -93,13 +99,14 @@ bold{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .backgroundSection .textBox{
-    right: 5%;
+    left: 5%;
     bottom: 10%;
     position: absolute;
+    max-width: 35em;
 }
 
 /*FIN CSS PARA BANNER PRINCIPAL ----------------------------------------------*/
@@ -112,20 +119,15 @@ bold{
 }
 
 .cardsCirculares .col-12:nth-of-type(2){
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--electrolux-bg-gray);
+    border-right: 1px solid var(--electrolux-bg-gray);
 }
 /*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
 
 
 /* CSS PARA SECCION TEXTO IZQUIERDA - IMAGEN DERECHA */
 
-.containerImgCortada{
-    min-height: 600px;
-    max-height: 615px;
-    height: 100%;
-    overflow: hidden;
-}
+
 
 /*FIN CSS SECCION TEXTO IZQ - IMAGEN DER */
 
@@ -171,6 +173,27 @@ bold{
     transform: scale(.5);
 }
 
+
+/*CSS PARA IMAGEN FONDO COMPLETO */
+
+.imgFondoCompleto .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FIN CSS PARA IMAGEN FONDO COMPLETO */
+
+/*CSS PARA IMAGEN QUE OCUPA FONDO COMPLETO IZQ TEXTO DER */
+
+.sectionImgFull .img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: left;
+}
+
+/*FIN CSS PARA IMAGEN QUE OCUPA FONDO COMPLETO IZQ TEXTO DER */
+
 /*CSS PARA SECCION DE INFORMACION TECNICA */
 
 .informationSection .tit{
@@ -213,6 +236,7 @@ bold{
     max-width: 260px;
     padding: 2.5em;
     position: relative;
+    cursor: pointer;
 }
 
 .tabsSection__tab p{
@@ -220,6 +244,8 @@ bold{
     z-index: 10;
     margin: 0%;
 }
+
+
 /* codigo para cuando esta activa la tab */
 
 .onActive{
@@ -266,6 +292,7 @@ bold{
 
     .backgroundSection .textBox{
         position: initial;
+        max-width: initial;
     }
 
     /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
@@ -383,6 +410,30 @@ bold{
 
 
 }
+
+@media screen and (max-width: 1920px) and (min-width: 1660px) {
+    .imgBackground{
+        height: 46rem;
+    }
+}
+
+/*MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
+
+@media screen and (min-width: 1000px) {
+    .containerImg .container{
+        max-width: 1100px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .containerImg .col-md-6{
+        width: 100% !important;
+    }
+
+}
+
+/*FIN MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
 
 
 
