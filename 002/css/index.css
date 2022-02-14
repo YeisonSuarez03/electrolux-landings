@@ -1,0 +1,373 @@
+/* configuracion de fuentes*/
+*{
+    font-family: electrolux_sanssemibold;
+}
+
+/*configuracion de variables */
+:root{
+    --electrolux-bg-primary: #193159; 
+    --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-text-primary: #041f4d; 
+    --electrolux-white: white; 
+    --electrolux-bg-primary-darken: #041e4d; 
+    --electrolux-bg-primary-light: #dde8ea;
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-black-blue: #191820;
+
+}
+
+/*configuracion de colores con variables*/
+.bg-electrolux-primary{
+    background: var(--electrolux-bg-primary);
+}
+.bg-electrolux-gray{
+    background: var(--electrolux-bg-gray);
+}
+.text-electrolux-primary{
+    color: var(--electrolux-text-primary);
+}
+
+.text-electrolux-white{
+    color: var(--electrolux-white);
+}
+.bg-electrolux-primary-darken{
+    background: var(--electrolux-bg-primary-darken);
+}
+.bg-electrolux-primary-light{
+    background: var(--electrolux-bg-primary-light);
+}
+.bg-electrolux-gray-light{
+    background: var(--electrolux-bg-gray-light);
+}
+.bg-electrolux-black-blue{
+    background: var(--electrolux-bg-black-blue);
+}
+
+
+/*configuracion de clases para fuentes */
+.font-semibold   {font-family: "electrolux_sanssemibold";}
+.font-light      {font-family: "electrolux_sanslight";}
+.font-regular    {font-family: "electrolux_sansregular";}
+.font-bold       {font-family: "electrolux_sansbold";}
+
+bold{
+    font-family: "electrolux_sansbold";
+}
+
+.display-3{
+    line-height: 1;
+}
+
+.txt-s{
+    font-size: 1.5rem;
+}
+.pd-0{
+    padding: 0 !important;
+}
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover{
+    object-fit: cover;
+}
+
+.electrolux__header{
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity: .95;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--electrolux-bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.electrolux__header div{
+    margin-left: 3rem;
+    max-height: 90%;
+}
+
+.electrolux__header div img{
+    max-height: 50px;
+}
+
+.imgBackground{
+    height: 39rem;
+}
+
+.imgBackground > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.backgroundSection .textBox{
+    left: 8%;
+    bottom: 10%;
+    position: absolute;
+}
+
+/*FIN CSS PARA BANNER PRINCIPAL ----------------------------------------------*/
+
+/*CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+.cardsCirculares img{
+    width: 100px;
+    height: 100px;
+}
+
+.cardsCirculares .col-12:nth-of-type(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+
+
+
+/*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+
+
+@media screen and (max-width: 767.98px) {
+
+
+    /*MEDIA QUERY PARA BANNER PRINCIPAL ------------------*/
+    
+    .imgBackground{
+        height: 26rem;
+    }
+
+    .backgroundSection .textBox{
+        position: initial;
+    }
+
+    /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
+
+
+    .cardsCirculares .col-12:nth-of-type(2){
+        border-left: 0;
+        border-right: 0;
+    }   
+    .cardsCirculares img{
+        width: 300px;
+        height: 300px;
+    }
+    /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
+    
+
+
+
+
+/*SECCION 2  COLUMNAS  1 IMG Y UN TEXTO */
+.div_text{
+
+    width: 100%;
+    }
+}
+
+.img_style{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    }
+ 
+    .carousel-indicators li {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+      }
+.div_text{
+
+padding: 100px 30px;
+}
+
+@media screen and (min-width: 1600px) {
+
+    .div_text{
+    
+        width: 60%;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+       
+.img_style{
+    object-position: left;
+
+    }
+
+   
+}
+/*FIN SECCION 2  COLUMNAS  1 IMG Y UN TEXTO */
+
+
+
+
+/* FEATURED  SLIDER */
+
+
+.c-s > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.Carousel-f .active {
+	background-color: var(--electrolux-text-primary);
+}
+
+.Carousel-f  [data-bs-target] {
+	opacity: 1;
+    border-radius: 50%; height: 20px; width: 20px;
+
+}
+
+
+@media screen and (min-width: 991px) {
+
+
+    
+
+    .Carousel-f{
+
+        justify-content: right;
+        padding-right: 13%;
+    }
+    
+
+}
+
+
+
+/* FIN  FEATURED  SLIDER */
+
+
+/*   SLIDER */
+.xd{
+    border: 1px solid white;
+}
+
+
+.img-Slider{
+    padding: 50px 0px;
+}
+
+.div_text2{
+
+    padding: 100px 30px;
+    }
+
+    @media screen and (min-width: 1600px) {
+
+        .div_text2{
+        
+            width: 60%;
+            }
+        }
+    
+        @media screen and (max-width: 992px) {
+
+            .div_text2{
+
+                padding: 20px 15px;
+                }
+
+                .img-g2{
+                    margin: 0px 0px 60px 0px !important;
+                }
+            
+                
+            }
+    
+
+.img-Slider > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    .carousel-control-next{
+
+    }
+
+
+    @media screen and (max-width: 991px) {
+
+        .slider-1{
+            justify-content: center;
+        }
+
+        .slider-2{
+            justify-content: center;
+        }
+    
+    }
+    
+    @media screen and (min-width: 992px) {
+
+        .slider-1{
+            justify-content: end;
+        }
+        .slider-2{
+            justify-content: start;
+        }
+    }
+    
+/* FIN SLIDER */
+
+
+/*CSS PARA SECCION DE INFORMACION TECNICA */
+
+.informationSection .tit{
+    padding: 10px;
+    border-radius: 10px;
+    gap: 0 10px;
+}
+
+.informationSection ul li{
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.informationSection .tit img{
+    width: 20px;
+}
+
+.detailsInfoDiv{
+    width: 100%;
+    max-width: 13rem;
+}
+
+/*FIN CSS PARA SECCION DE INFORMACION TECNICA */
+
+
+@media screen and (max-width: 767.98px) {
+
+
+    
+
+
+    .detailsInfoDiv{
+        max-width: initial;
+    }
+
+
+}
+
+
+
+
+
