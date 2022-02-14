@@ -1,0 +1,63 @@
+/* configuracion de fuentes*/
+*{
+    font-family: electrolux_sanssemibold;
+}
+
+/*configuracion de variables */
+:root{
+    --electrolux-bg-primary: #193159; 
+    --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-bg-dark: #191820; 
+    --electrolux-bg-gray-light: #acbac1; 
+    --electrolux-text-primary: #193159; 
+    --electrolux-bg-primary-darken: #041e4d; 
+    --electrolux-bg-primary-light: #dde8ea; 
+}
+
+/*configuracion de colores con variables*/
+.bg-electrolux-primary{
+    background: var(--electrolux-bg-primary);
+}
+.bg-electrolux-primary-darken{
+    background: var(--electrolux-bg-primary-darken);
+}
+.bg-electrolux-primary-light{
+    background: var(--electrolux-bg-primary-light);
+}
+.bg-electrolux-gray{
+    background: var(--electrolux-bg-gray);
+}
+.bg-electrolux-dark{
+    background: var(--electrolux-bg-dark);
+}
+.bg-electrolux-gray-light{
+    background: var(--electrolux-bg-gray-light);
+}
+.text-electrolux-primary{
+    color: var(--electrolux-text-primary);
+}
+
+/*configuracion de clases para fuentes */
+.font-semibold   {font-family: "electrolux_sanssemibold";}
+.font-light      {font-family: "electrolux_sanslight";}
+.font-regular    {font-family: "electrolux_sansregular";}
+.font-bold       {font-family: "electrolux_sansbold";}
+
+bold{
+    font-family: "electrolux_sansbold";
+}
+
+.display-3{
+    line-height: 1;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover{
+    object-fit: cover;
+}
+
+
