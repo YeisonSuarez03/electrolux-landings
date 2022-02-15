@@ -161,6 +161,7 @@ bold {
 
 
 
+
 /*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
 
 
@@ -199,15 +200,7 @@ bold {
         width: 100%;
     }
 
-    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
-
-    .expansibleCards__card p.fs-6.text-electrolux-primary {
-        font-size: 2.5rem !important;
-    }
-
-    .expansibleCards__card p.text-electrolux-primary {
-        font-size: 1.2rem !important;
-    }
+   
 
 }
 
@@ -350,7 +343,7 @@ bold {
 @media (min-width:1501px)  {
     .s-h3 {
         font-size: 3rem;
-        margin-bottom: 10px !important;
+        margin-bottom: 25px !important;
     }
 
     .s-p {
@@ -542,6 +535,60 @@ bold {
 .expansibleCards__icons>div.bg-electrolux-primary-darken img {
     transform: scale(.5);
 }
+
+@media screen and (max-width: 767px) {
+  /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+  .expansibleCards__card p.fs-6.text-electrolux-primary {
+    font-size: 2rem !important;
+}
+
+.expansibleCards__card p.text-electrolux-primary {
+    font-size: 1rem !important;
+}
+}
+@media screen and (min-width: 768px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    .expansibleCards__card p.fs-6.text-electrolux-primary {
+        font-size: 1.1rem !important;
+    }
+    
+    .expansibleCards__card p.text-electrolux-primary {
+        font-size: 1rem !important;
+    }
+
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+   /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+   .expansibleCards__card p.fs-6.text-electrolux-primary {
+    font-size: 1.5rem !important;
+}
+
+.expansibleCards__card p.text-electrolux-primary {
+    font-size: 1.2rem !important;
+}
+
+}
+@media (min-width:1501px)  {
+      /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+      .expansibleCards__card p.fs-6.text-electrolux-primary {
+        font-size: 1.8rem !important;
+    }
+    
+    .expansibleCards__card p.text-electrolux-primary {
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+
+}
+
 
 /*CSS PARA IMAGEN FONDO COMPLETO */
 
