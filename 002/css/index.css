@@ -225,6 +225,10 @@ bold {
     border-radius: 15px;
 }
 
+.carousel-img-maxwidth{
+    max-width: 400px;
+}
+
 .div_text {
 
     padding: 100px 30px;
