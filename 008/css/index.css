@@ -77,6 +77,24 @@ bold{
 }
 /* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
 
+
+@media screen and (max-width: 1000px) {
+
+
+    .img-dyi{
+        width: 70%;
+    }
+
+    .img-dyid {
+        justify-content: center !important;
+    }
+    
+
+    
+
+}
+
+
 /*HEADER*/
 
 .electrolux__header{
