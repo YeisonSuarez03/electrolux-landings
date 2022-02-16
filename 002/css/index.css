@@ -30,10 +30,11 @@ html {
 
     font-size: 16px;
 
+
+
 }
 
 
-/CLASES DE FUENTES GENERALES/
 
 .title{
     font-size: var(--electrolux-bg-title);
@@ -75,7 +76,7 @@ html {
 }
 
 
-/RESPONSIVE/
+
 
 @media (max-width: 768px){
     .title{
@@ -127,9 +128,6 @@ html {
         height: 100px;
     }
 }
-
-
-/FIN CLASES DE FUENTES GENERALES/
 
 
 /*configuracion de colores con variables*/
