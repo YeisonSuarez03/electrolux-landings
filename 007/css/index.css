@@ -26,7 +26,7 @@
     --electrolux-bg-table-item: 1.1vw;
 }
 
-/CLASES DE FUENTES GENERALES/
+
 
 .title{
     font-size: var(--electrolux-bg-title);
@@ -67,10 +67,15 @@
     font-size: var(--electrolux-bg-table-item);
 }
 
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
 
-/RESPONSIVE/
+
 
 @media (max-width: 768px){
+
     .title{
         font-size: 30px;
     }
@@ -122,7 +127,7 @@
 }
 
 
-/FIN CLASES DE FUENTES GENERALES/
+
 /*configuracion de colores con variables*/
 .bg-electrolux-primary{
     background: var(--electrolux-bg-primary);
@@ -444,10 +449,7 @@ html {
     width: 20px;
 }
 
-.detailsInfoDiv{
-    width: 100%;
-    max-width: 13rem;
-}
+
 
 /*FIN CSS PARA SECCION DE INFORMACION TECNICA */
 
@@ -761,3 +763,7 @@ html {
 
 
 
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
+}

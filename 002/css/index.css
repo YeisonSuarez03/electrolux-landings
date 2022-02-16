@@ -75,7 +75,10 @@ html {
     font-size: var(--electrolux-bg-table-item);
 }
 
-
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
 
 
 @media (max-width: 768px){
@@ -399,7 +402,7 @@ bold {
         padding-right: 1px !important;
     }
     .img-g3{
-        width: 24%;
+        width: 80%;
     }
 }
 @media screen and (min-width: 768px) {
@@ -422,7 +425,7 @@ bold {
         font-size: 0.9rem;
     }
     .img-g2{
-        width: 100%;
+        width: 70%;
         align-self: start !important;
 
     }
@@ -442,7 +445,7 @@ bold {
         font-size: 1.1rem;
     }
     .img-g2{
-        width: 90px;
+        width: 120px;
         align-self: start !important;
 
     }
@@ -462,7 +465,7 @@ bold {
         font-size: 1.3rem;
     }
     .img-g2{
-        width: 90px;
+        width: 120px;
         align-self: start !important;
 
     }
@@ -580,10 +583,6 @@ bold {
     width: 20px;
 }
 
-.detailsInfoDiv {
-    width: 100%;
-    max-width: 13rem;
-}
 
 /*FIN CSS PARA SECCION DE INFORMACION TECNICA */
 
@@ -704,3 +703,8 @@ bold {
     width: 100%;
     object-fit: cover;
 }
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
+} 
