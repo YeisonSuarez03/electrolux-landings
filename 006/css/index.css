@@ -4,16 +4,26 @@
 }
 
 /*configuracion de variables */
-:root {
-    --electrolux-bg-primary: #193159;
-    --electrolux-bg-gray: #7b8a9a;
-    --electrolux-text-primary: #041f4d;
-    --electrolux-white: white;
-    --electrolux-bg-primary-darken: #041e4d;
-    --electrolux-bg-primary-light: #dde8ea;
-    --electrolux-bg-gray-light: #adbbc1;
-    --electrolux-bg-black-blue: #191820;
-
+:root{
+    --electrolux-bg-primary: #193159; 
+    --electrolux-bg-gray: #7b8a9a; 
+    --electrolux-bg-dark: #191820; 
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-gray-light-2:#e0e9eb; 
+    --electrolux-text-primary: #193159; 
+    --electrolux-bg-primary-darken: #041e4d; 
+    --electrolux-bg-primary-light: #dde8ea;  
+    --electrolux-bg-items-text: 1.1vw;
+    --electrolux-bg-title: 3vw;
+    --electrolux-bg-text: 1.43vw;
+    --electrolux-bg-plus-title: 1.3vw;
+    --electrolux-bg-plus-text: 1.1vw;
+    --electrolux-bg-guaranty: 1vw;
+    --electrolux-bg-lineheight: 1.25;
+    --electrolux-bg-general-info: 1.5vw;
+    --electrolux-bg-max-width-table: 20vw;
+    --electrolux-bg-table-title: 1.1vw;
+    --electrolux-bg-table-item: 1.1vw;
 }
 
 html {
@@ -128,7 +138,7 @@ bold {
 }
 
 .imgBackground {
-    height: 39rem;
+    height: 46rem;
 }
 
 .imgBackground>img {
@@ -140,7 +150,7 @@ bold {
 
 .backgroundSection .textBox {
     left: 8%;
-    bottom: 10%;
+    bottom: 4%;
     position: absolute;
 }
 
@@ -151,6 +161,7 @@ bold {
 .cardsCirculares img {
     width: 100px;
     height: 100px;
+    margin-bottom: 10px;
 }
 
 .cardsCirculares .col-12:nth-of-type(2) {
@@ -474,7 +485,7 @@ bold {
 
 .detailsInfoDiv {
     width: 100%;
-    max-width: 13rem;
+    max-width: 20vw;
 }
 
 /*FIN CSS PARA SECCION DE INFORMACION TECNICA */
@@ -595,4 +606,686 @@ bold {
 .imgFondoCompleto .img {
     width: 100%;
     object-fit: cover;
+}
+
+
+/*FIN CSS PARA IMAGEN FONDO COMPLETO*/
+
+/*CLASES DE FUENTES GENERALES*/
+
+.title{
+    font-size: var(--electrolux-bg-title);
+}
+
+.text{
+    font-size: var(--electrolux-bg-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.plus-title{
+    font-size: var(--electrolux-bg-plus-title);
+}
+
+.plus-text{
+    font-size: var(--electrolux-bg-plus-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.general-info{
+    font-size: var(--electrolux-bg-general-info);
+}
+
+
+.guaranty{
+    font-size: var(--electrolux-bg-guaranty);
+}
+
+.bg-electrolux-gray-light-2 {
+    background: var(--electrolux-bg-gray-light-2);
+}
+
+.table-title {
+    font-size: var(--electrolux-bg-table-title);
+}
+
+.table-item {
+    font-size: var(--electrolux-bg-table-item);
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 20px;
+        
+    }
+    
+    .plus-title{
+        font-size: 20px;
+    }
+    
+    .plus-text{
+        font-size: 15px;
+        
+    }
+    
+    .general-info{
+        font-size: 20px;
+    }
+    
+    
+    .guaranty{
+        font-size: 12px;
+    }
+    
+    
+    .table-title {
+        font-size: 15px;
+    }
+    
+    .table-item {
+        font-size: 12px;
+    }
+
+    .cardsCirculares span{
+        font-size: 20px;
+    }
+
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 15px;
+    }
+
+    .cardsCirculares img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    
+}
+
+
+/*FIN CLASES DE FUENTES GENERALES*/
+
+
+.banner {
+    font-size: 2.1vw;
+    line-height: 1;
+}
+
+
+.banner-subtitle {
+    color: #041e4e;
+    font-size: 1.5vw;
+    font-weight: 600;
+    
+}
+
+.bg-electrolux-primary-light-2{
+    background: #aebbc1;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.white{
+    color: white;
+}
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
+}
+
+.cardsCirculares span {
+    margin-bottom: -1%;
+    font-size: var(--electrolux-bg-items-text);
+}
+
+.cardsCirculares .row>*{
+    padding-left: 0!important;
+}
+
+.carousel-006-2 .carousel-control-prev,
+.carousel-006-2 .carousel-control-next {
+    width: 5%!important;
+}
+
+.carousel-006-2 .img {
+    max-width: 30vw;
+}
+
+.fondoAzul .expansibleCards__card p.text-electrolux-primary {
+    font-size: 1.4vw !important;
+    text-align: left;
+}
+
+.diseñoBackground {
+    position: absolute;
+    top: 180%;
+    left: 8%;
+    color: white;
+    max-width: 30vw;
+    padding: 2rem;
+}
+
+.box-1{
+    display: flex;
+    position: absolute;
+    top: 172%;
+    left: 42%;
+}
+
+.box-2{
+    display: flex;
+    position: absolute;
+    top: 172%;
+    left: 60%;
+}
+
+.box-3{
+    display: flex;
+    position: absolute;
+    top: 172%;
+    left: 78%;
+}
+
+.fondo .imgBackground {
+    height: 39vw;
+}
+
+@media (max-width:768px){
+    .carousel-006-2 .img {
+        max-width: 80%;
+    }
+
+    .cardsCirculares span {
+        font-size: 20px;
+    }
+
+    .banner {
+        font-size: 30px;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1800px){
+    .diseñoBackground {
+        position: absolute;
+        top: 186%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 178%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 178%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 178%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+
+@media (max-width:1600px){
+    .diseñoBackground {
+        position: absolute;
+        top: 194%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 187%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 187%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 187%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+
+
+@media (max-width:1440px){
+    .diseñoBackground {
+        position: absolute;
+        top: 202%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 196%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 196%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 196%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+
+
+
+@media (max-width:1310px){
+    .diseñoBackground {
+        position: absolute;
+        top: 210%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 206%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 206%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 206%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+@media (max-width:1200px){
+    .diseñoBackground {
+        position: absolute;
+        top: 207%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 203%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 203%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 203%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+@media (max-width:1130px){
+    .diseñoBackground {
+        position: absolute;
+        top: 198%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 198%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 198%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 198%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+@media (max-width:1024px){
+    .diseñoBackground {
+        position: absolute;
+        top: 190%;
+        left: 8%;
+        color: white;
+        max-width: 30vw;
+        padding: 2rem;
+    }
+    
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 190%;
+        left: 42%;
+    }
+    
+    .box-2{
+        display: flex;
+        position: absolute;
+        top: 190%;
+        left: 60%;
+    }
+    
+    .box-3{
+        display: flex;
+        position: absolute;
+        top: 190%;
+        left: 78%;
+    }
+    
+    .fondo .imgBackground {
+        height: 39vw;
+    }
+}
+
+@media (max-width:768px){
+    .fondoAzul .expansibleCards__card p.text-electrolux-primary {
+        font-size: 20px !important;
+        text-align: left;
+    }
+
+    .diseñoBackground {
+        position: absolute;
+        top: 328%;
+        left: 8%;
+        
+    }
+
+    .box-1{
+        display: flex;
+    position: absolute;
+    top: 360%;
+    left: 29%;
+    }
+    
+    .box-2{
+        display: flex;
+    position: absolute;
+    top: 446%;
+    left: 29%;
+    }
+
+    .box-3{
+        display: flex;
+    position: absolute;
+    top: 531%;
+    left: 29%;
+    }
+
+    .diseñoBackground {
+
+        max-width: initial;
+        
+    }
+
+    .fondo .imgBackground {
+        height: 303vh;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+}
+@media (max-width:500px){
+    .diseñoBackground {
+        position: absolute;
+        top: 285%;
+        left: 8%;
+        
+    }
+
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 332%;
+        left: 18%;
+    }
+    
+    .box-2{
+        display: flex;
+    position: absolute;
+    top: 414%;
+    left: 18%;
+    }
+
+    .box-3{
+        display: flex;
+    position: absolute;
+    top: 497%;
+    left: 18%;
+    }
+
+    .diseñoBackground {
+
+        max-width: initial;
+        
+    }
+
+    .fondo .imgBackground {
+        height: 303vh;
+    }
+}
+
+@media (max-width:425px){
+    .diseñoBackground {
+        position: absolute;
+        top: 285%;
+        left: 8%;
+        
+    }
+
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 332%;
+        left: 14%;
+    }
+    
+    .box-2{
+        display: flex;
+    position: absolute;
+    top: 414%;
+    left: 14%;
+    }
+
+    .box-3{
+        display: flex;
+    position: absolute;
+    top: 497%;
+    left: 14%;
+    }
+
+    .diseñoBackground {
+
+        max-width: initial;
+        
+    }
+
+    .fondo .imgBackground {
+        height: 303vh;
+    }
+}
+
+
+@media (max-width:375px){
+    .diseñoBackground {
+        position: absolute;
+        top: 285%;
+        left: 8%;
+        
+    }
+
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 332%;
+        left: 8%;
+    }
+    
+    .box-2{
+        display: flex;
+    position: absolute;
+    top: 414%;
+    left: 8%;
+    }
+
+    .box-3{
+        display: flex;
+    position: absolute;
+    top: 497%;
+    left: 8%;
+    }
+
+    .diseñoBackground {
+
+        max-width: initial;
+        
+    }
+
+    .fondo .imgBackground {
+        height: 303vh;
+    }
+}
+
+@media (max-width:320px){
+    .diseñoBackground {
+        position: absolute;
+        top: 287%;
+        left: 8%;
+        
+    }
+
+    .box-1{
+        display: flex;
+        position: absolute;
+        top: 344%;
+        left: 8%;
+        width: 85%;
+    }
+    
+    .box-2{
+        display: flex;
+    position: absolute;
+    top: 426%;
+    left: 8%;
+    width: 85%;
+    }
+
+    .box-3{
+        display: flex;
+    position: absolute;
+    top: 509%;
+    left: 8%;
+    width: 85%;
+    }
+
+    .diseñoBackground {
+
+        max-width: initial;
+        
+    }
+
+    
 }
