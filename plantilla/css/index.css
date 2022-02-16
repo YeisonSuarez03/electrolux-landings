@@ -8,10 +8,22 @@
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
     --electrolux-bg-dark: #191820; 
-    --electrolux-bg-gray-light: #acbac1; 
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-gray-light-2:#e0e9eb; 
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
-    --electrolux-bg-primary-light: #dde8ea; 
+    --electrolux-bg-primary-light: #dde8ea;  
+    --electrolux-bg-items-text: 1.1vw;
+    --electrolux-bg-title: 3vw;
+    --electrolux-bg-text: 1.43vw;
+    --electrolux-bg-plus-title: 1.3vw;
+    --electrolux-bg-plus-text: 1.1vw;
+    --electrolux-bg-guaranty: 1vw;
+    --electrolux-bg-lineheight: 1.25;
+    --electrolux-bg-general-info: 1.5vw;
+    --electrolux-bg-max-width-table: 20vw;
+    --electrolux-bg-table-title: 1.1vw;
+    --electrolux-bg-table-item: 1.1vw;
 }
 
 /*configuracion de colores con variables*/
@@ -129,7 +141,7 @@ padding: 0px !important;
 
 .containerImgCortada{
     min-height: 600px;
-    max-height: 615px;
+    max-height: 710px;
     height: 100%;
     overflow: hidden;
 }
@@ -318,6 +330,140 @@ padding: 0px !important;
 
 .gray-white{
     color: #adbbc1;
+}
+
+.banner {
+    font-size: 1.9vw;
+}
+
+
+.banner-subtitle {
+    font-size: 1.3vw;
+}
+
+
+.cardsCirculares span {
+    margin-bottom: -1%;
+    font-size: var(--electrolux-bg-items-text);
+}
+
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
+
+@media screen and (max-width: 767.98px){
+.detailsInfoDiv {
+    max-width: initial;
+}
+}
+
+@media (max-width:768px){
+    .banner {
+        font-size: 30px;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px;
+    }
+
+    }   
+
+
+/*CLASES DE FUENTES GENERALES*/
+
+.title{
+    font-size: var(--electrolux-bg-title);
+}
+
+.text{
+    font-size: var(--electrolux-bg-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.plus-title{
+    font-size: var(--electrolux-bg-plus-title);
+}
+
+.plus-text{
+    font-size: var(--electrolux-bg-plus-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.general-info{
+    font-size: var(--electrolux-bg-general-info);
+}
+
+
+.guaranty{
+    font-size: var(--electrolux-bg-guaranty);
+}
+
+.bg-electrolux-gray-light-2 {
+    background: var(--electrolux-bg-gray-light-2);
+}
+
+.table-title {
+    font-size: var(--electrolux-bg-table-title);
+}
+
+.table-item {
+    font-size: var(--electrolux-bg-table-item);
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 15px;
+        
+    }
+    
+    .plus-title{
+        font-size: 20px;
+    }
+    
+    .plus-text{
+        font-size: 15px;
+        
+    }
+    
+    .general-info{
+        font-size: 20px;
+    }
+    
+    
+    .guaranty{
+        font-size: 12px;
+    }
+    
+    
+    .table-title {
+        font-size: 15px;
+    }
+    
+    .table-item {
+        font-size: 12px;
+    }
+
+    .cardsCirculares span{
+        font-size: 20px;
+    }
+
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 15px;
+    }
+
+    .cardsCirculares img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 

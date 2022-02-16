@@ -8,7 +8,8 @@
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
     --electrolux-bg-dark: #191820; 
-    --electrolux-bg-gray-light: #acbac1; 
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-white: white; 
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
     --electrolux-bg-primary-light: #dde8ea; 
@@ -36,6 +37,9 @@
 .text-electrolux-primary{
     color: var(--electrolux-text-primary);
 }
+.text-electrolux-white{
+    color: var(--electrolux-white);
+}
 
 /*configuracion de clases para fuentes */
 .font-semibold   {font-family: "electrolux_sanssemibold";}
@@ -59,6 +63,48 @@ bold{
 .img-cover{
     object-fit: cover;
 }
+.txt-s{
+    font-size: 1.5rem;
+}
+
+
+html {
+
+	font-size: 17px; 
+
+
+
+}
+
+
+
+.div_text2{
+
+    padding: 100px 10px;
+    }
+
+    @media screen and (min-width: 1600px) {
+
+        .div_text2{
+        
+            width: 60%;
+            }
+        }
+    
+        @media screen and (max-width: 992px) {
+
+            .div_text2{
+
+                padding: 20px 15px;
+                }
+
+                .img-g2{
+                    margin: 0px 0px 60px 0px !important;
+                }
+            
+                
+            }
+    
 
 /* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
 
@@ -127,7 +173,33 @@ bold{
 
 /* CSS PARA SECCION TEXTO IZQUIERDA - IMAGEN DERECHA */
 
+@media screen and (max-width: 1000px) {
 
+
+    .img-dyi{
+        width: 70%;
+    }
+
+    .img-dyid {
+        justify-content: center !important;
+    }
+    
+
+    
+
+}
+
+@media screen and (min-width: 1001px) {
+
+
+    .img-dyi{
+        width: 100%;
+    }
+
+
+    
+
+}
 
 /*FIN CSS SECCION TEXTO IZQ - IMAGEN DER */
 
