@@ -105,7 +105,7 @@ bold{
 .backgroundSection .textBox{
     top: 28%;
     position: absolute;
-    max-width: 30em;
+    max-width: calc(20rem + 15vw);
 }
 .textBoxs.text-white{
     opacity: .9;
@@ -138,12 +138,12 @@ bold{
 .containerImg{
     background-color: var(--electrolux-bg-primary-darken);
 }
-.containerImg .text-white{
+.containerImgCortada .text-white{
     color: var(--electrolux-bg-gray) !important;
     font-size: 2.7em;
-    margin-top: 3em;
+    margin-top: 1em;
 }
-.containerImg .container p{
+.containerImgCortada .container p{
     color: var(--electrolux-bg-primary-light) !important;
 }
 
@@ -156,6 +156,17 @@ bold{
 }
 
 /*FIN CSS PARA IMAGEN FONDO COMPLETO */
+
+/*CSS PARA CONTAINER IMG CORTADA*/
+.containerImgCortada{
+    min-height: 570px;
+    max-height: 570px;
+    height: 100%;
+    overflow: hidden;
+}
+/*FIN CSS PARA CONTAINER IMG CORTADA*/
+
+
 /* CSS PARA SECCION DE CARDS EXPANSIBLES */
 
 .expansibleCards__card{
@@ -227,6 +238,18 @@ color: var(--electrolux-bg-primary-light) !important;
         padding-right: 13%;
     }
 }
+
+            /* AJUSTES A SLIDER */
+
+.sliderTextAdjusted {
+    padding: 10%;
+}
+
+.sliderImgAdjusted{
+    padding: 0 0 10% 0;
+}
+
+
 /* FIN  FEATURED  SLIDER */
 /*CSS PARA IMAGEN QUE OCUPA FONDO COMPLETO IZQ TEXTO DER */
 
@@ -416,3 +439,27 @@ color: var(--electrolux-bg-primary-light) !important;
 }
 
 /*FIN MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
+
+
+@media screen and (max-width: 995px) {
+
+    /*MEDIA QUERY PARA SECCION img cortada */
+
+    .containerImgCortada{
+        min-height: initial;
+        max-height: initial;
+        height: auto;
+        overflow: initial;
+    }
+
+    .containerImgCortada div.col-md-6{
+        width: 100%;
+    }
+
+    .containerImgCortada div.row{
+        flex-direction: column-reverse;
+    }
+
+    /*FIN MEDIA QUERY PARA SECCION img cortada */
+
+}
