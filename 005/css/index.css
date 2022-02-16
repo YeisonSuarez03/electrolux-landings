@@ -12,6 +12,7 @@
     --electrolux-bg-primary-darken: #041e4d;
     --electrolux-bg-primary-light: #dde8ea;
     --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-gray-light-2:#e0e9eb; 
     --electrolux-bg-black-blue: #191820;
     --electrolux-bg-items-text: 1.1vw;
     --electrolux-bg-title: 3vw;
@@ -385,7 +386,7 @@ color: var(--electrolux-bg-primary-light) !important;
     width: 100%;
     object-fit: cover;
     height: 100%;
-    object-position: left;
+    object-position: center;
 }
 
 
