@@ -82,6 +82,13 @@ html {
 
 
 @media (max-width: 768px){
+
+    
+.footer{
+    font-size: 15px !important;
+} 
+
+
     .banner {
         font-size: 30px !important;
     }
@@ -726,12 +733,12 @@ bold {
 	left: 10%;
 	bottom: 10%;
 	position: absolute;
-	max-width: 38vw;
+	max-width: 30vw;
     opacity: .95;
 }
 
 .banner-subtitle {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
 }
 .banner {
 	font-size: 2.1vw;
@@ -739,9 +746,7 @@ bold {
 .gray-white {
 	color: #adbbc1;
 }
-.banner-subtitle {
-	font-size: 1.5vw;
-}
+
 
 .bold {
 	font-weight: 600;

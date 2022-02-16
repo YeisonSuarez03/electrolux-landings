@@ -338,7 +338,11 @@ padding: 0px !important;
 
 
 .banner-subtitle {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+}
+
+.p6 {
+    padding: 6rem;
 }
 
 
@@ -435,12 +439,15 @@ padding: 0px !important;
 /*RESPONSIVE*/
 
 @media (max-width: 768px){
+    .p6 {
+        padding: 2rem;
+    }
     .title{
         font-size: 30px;
     }
     
     .text{
-        font-size: 15px;
+        font-size: 20px;
         
     }
     

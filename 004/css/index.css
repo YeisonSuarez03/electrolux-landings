@@ -66,6 +66,7 @@ bold{
 .img{
     max-width: 100%;
     height: auto;
+    
 }
 
 .img-cover{
@@ -161,6 +162,7 @@ bold{
 .expansibleCards_img .img{
     width: 100%;
     object-fit: cover;
+    margin-bottom: -3px;
 }
 
 .expansibleCards__icons{
@@ -213,6 +215,7 @@ bold{
     width: 100%;
     object-fit: cover;
     height: 100%;
+    margin-left: 1px;
     
 }
 
@@ -519,7 +522,7 @@ padding: 0%!important;
 
 
 .banner-subtitle {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 
 .bold{
