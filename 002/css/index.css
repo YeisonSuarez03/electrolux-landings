@@ -82,12 +82,21 @@ html {
 
 
 @media (max-width: 768px){
+    .banner {
+        font-size: 30px !important;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px !important;
+    }
+
     .title{
         font-size: 30px;
     }
     
     .text{
-        font-size: 15px;
+        font-size: 20px;
         
     }
     
@@ -275,7 +284,7 @@ bold {
 
 @media screen and (max-width: 767.98px) {
 
-
+    
     /*MEDIA QUERY PARA BANNER PRINCIPAL ------------------*/
 
     .imgBackground {
@@ -403,6 +412,10 @@ bold {
     }
     .img-g3{
         width: 80%;
+    }
+    .backgroundSection .textBoxCambios {
+        position: initial !important;
+        max-width: initial !important;
     }
 }
 @media screen and (min-width: 768px) {
@@ -708,3 +721,28 @@ bold {
     text-align: right;
     font-size: 1.1vw;
 } 
+
+.backgroundSection .textBoxCambios {
+	left: 10%;
+	bottom: 10%;
+	position: absolute;
+	max-width: 38vw;
+    opacity: .95;
+}
+
+.banner-subtitle {
+    font-size: 1.5vw;
+}
+.banner {
+	font-size: 2.1vw;
+}
+.gray-white {
+	color: #adbbc1;
+}
+.banner-subtitle {
+	font-size: 1.5vw;
+}
+
+.bold {
+	font-weight: 600;
+}
