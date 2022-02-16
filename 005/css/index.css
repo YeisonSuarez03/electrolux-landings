@@ -442,6 +442,8 @@ bold{
         margin-bottom: 25px !important;
     }
 
+}
+
 /* .flex-column {padding: 10% 0 0 10%;} */
 @media screen and (min-width: 991px) {
 
@@ -737,8 +739,6 @@ bold{
 
     .img_style {
         object-position: left;
-
     }
 
-
-}
+    }
