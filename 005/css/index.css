@@ -60,4 +60,359 @@ bold{
     object-fit: cover;
 }
 
+/* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
 
+/*HEADER*/
+
+.electrolux__header{
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity: .95;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--electrolux-bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.electrolux__header div{
+    margin-left: 3rem;
+    max-height: 90%;
+}
+
+.electrolux__header div img{
+    max-height: 50px;
+}
+
+/*FIN HEADER --------------------------------------------------*/
+
+/*CSS PARA BANNER PRINCIPAL -----------------------------------*/
+
+.imgBackground{
+    height: 39rem;
+}
+
+.imgBackground > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.backgroundSection .textBox{
+    top: 28%;
+    position: absolute;
+    max-width: 30em;
+}
+.textBoxs.text-white{
+    opacity: .9;
+    height: 18em;
+}
+.text-white h4{
+    width: 79%;
+}
+
+/*FIN CSS PARA BANNER PRINCIPAL ----------------------------------------------*/
+/*CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+.cardsCirculares img{
+    width: 100px;
+    height: 100px;
+}
+.cardsCirculares{
+    background-color: var(--electrolux-bg-gray);
+}
+.cardsCirculares span{
+    color: var(--electrolux-bg-primary-light);
+}
+.cardsCirculares .col-12:nth-of-type(2){
+    border-left: 2px solid var(--electrolux-bg-primary-light);
+    border-right: 2px solid var(--electrolux-bg-primary-light);
+}
+/*FIN CSS PARA CARDS CON IMGS CIRCULARES -------------------------*/
+
+/* CSS PARA SECCION TEXTO IZQUIERDA - IMAGEN DERECHA */
+.containerImg{
+    background-color: var(--electrolux-bg-primary-darken);
+}
+.containerImg .text-white{
+    color: var(--electrolux-bg-gray) !important;
+    font-size: 2.7em;
+    margin-top: 3em;
+}
+.containerImg .container p{
+    color: var(--electrolux-bg-primary-light) !important;
+}
+
+/*FIN CSS SECCION TEXTO IZQ - IMAGEN DER */
+/*CSS PARA IMAGEN FONDO COMPLETO */
+
+.imgFondoCompleto .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*FIN CSS PARA IMAGEN FONDO COMPLETO */
+/* CSS PARA SECCION DE CARDS EXPANSIBLES */
+
+.expansibleCards__card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+.slider-container{
+    padding: 0;
+}
+.expansibleCards_img .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.expansibleCards__icons{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.expansibleCards__icons > div.bg-electrolux-primary-darken{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.expansibleCards__icons > div.bg-electrolux-primary-darken img{
+    transform: scale(.5);
+}
+/* FEATURED  SLIDER */
+
+.c-s > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.Carousel-f .active {
+	background-color: var(--electrolux-text-primary);
+}
+.Carousel-f  [data-bs-target] {
+	opacity: 1;
+    border-radius: 50%; height: 20px; width: 20px;
+}
+.carousel-item h3{
+color: var(--electrolux-bg-primary-light) !important;
+}
+.carousel-item p{
+    font-size: 1.5em;
+}
+.carousel-item .text-electrolux-white{
+    color: var(--electrolux-bg-primary-light)
+}
+.flex-column {padding: 10% 0 0 10%;}
+@media screen and (min-width: 991px) {
+
+    .Carousel-f{
+        justify-content: right;
+        padding-right: 13%;
+    }
+}
+/* FIN  FEATURED  SLIDER */
+/*CSS PARA IMAGEN QUE OCUPA FONDO COMPLETO IZQ TEXTO DER */
+
+.sectionImgFull .img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: left;
+}
+
+
+/*FIN CSS PARA IMAGEN QUE OCUPA FONDO COMPLETO IZQ TEXTO DER */
+
+/*CSS PARA SECCION DE INFORMACION TECNICA */
+
+.informationSection .tit{
+    padding: 10px;
+    border-radius: 10px;
+    gap: 0 10px;
+}
+
+.informationSection ul li{
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.informationSection .tit img{
+    width: 20px;
+}
+
+.detailsInfoDiv{
+    width: 100%;
+    max-width: 13rem;
+}
+
+/*FIN CSS PARA SECCION DE INFORMACION TECNICA */
+@media screen and (max-width: 767.98px) {
+
+
+    /*MEDIA QUERY PARA BANNER PRINCIPAL ------------------*/
+    
+    .imgBackground{
+        height: 26rem;
+    }
+
+    .backgroundSection .textBox{
+        position: initial;
+        max-width: initial;
+    }
+
+    /*FIN MEDIA QUERY BANNER PRINCIPAL -------------------- */
+
+    /*MEDIA QUERY PARA SECCION CON IMGS CIRCULARES */
+
+    .cardsCirculares .col-12:nth-of-type(2){
+        border-left: 0;
+        border-right: 0;
+    }   
+    .cardsCirculares img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /*FIN MEDIA QUERY SECCION CON IMGS CIRCULARES */
+
+    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    .expansibleCards__card p.fs-6.text-electrolux-primary{
+        font-size: 2.5rem !important;
+    }
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 1.2rem !important;
+    }
+
+    /*FIN MEDIA QUERY SECCION CARDS EXPANDIBLES */
+
+    /* MEDIA QUERY PARA SECCION DE INFORMACION TECNICA */
+
+    .detailsInfoDiv{
+        max-width: initial;
+    }
+
+    /* FIN MEDIA QUERY PARA SECCION DE INFORMACION TECNICA */
+
+    /* MEDIA QUERY PARA SECCION DE TABS */
+
+    .tabsSection__height{
+        min-height: initial;
+    }
+
+    .tabsSection__height > div:first-child{
+        flex-direction: row !important;
+    }
+
+    .onActive{
+        min-width: initial;
+        max-width: initial;
+        height: 100%;
+        top: 0;
+        left: 0;    
+    }
+
+    .tabsSection__tab{
+        text-align: center;
+        padding: 1.5em !important;
+    }
+
+    .tabsSection__tab p{
+        font-size: 1rem !important;
+    }
+
+    .tabsSection__content .img{
+        width: calc(60% + 10vw);
+    }
+
+
+    /* FIN MEDIA QUERY PARA SECCION DE TABS */
+
+
+
+    
+
+}
+
+@media screen and (max-width: 995px) {
+
+    /*MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+    .containerImgCortada{
+        min-height: initial;
+        max-height: initial;
+        height: auto;
+        overflow: initial;
+    }
+
+    .containerImgCortada div.col-md-6{
+        width: 100%;
+    }
+
+    .containerImgCortada div.row{
+        flex-direction: column-reverse;
+    }
+
+    /*FIN MEDIA QUERY PARA SECCION TEXTO IZQ - IMG DER */
+
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+    
+
+    /* MEDIA QUERY PARA SECCION DE TABS */
+
+    .tabsSection .tabsSection__tab{
+        max-width: 200px;
+    }
+    .onActive{
+        min-width: calc(200px + 3vw);
+        max-width: 260px;
+    }
+
+
+    /* FIN MEDIA QUERY PARA SECCION DE TABS */
+
+
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1660px) {
+    .imgBackground{
+        height: 46rem;
+    }
+}
+
+/*MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
+
+@media screen and (min-width: 1000px) {
+    .containerImg .container{
+        max-width: 1100px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .containerImg .col-md-6{
+        width: 100% !important;
+    }
+
+}
+
+/*FIN MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
