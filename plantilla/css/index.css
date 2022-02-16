@@ -72,6 +72,9 @@ bold{
     object-fit: cover;
 }
 
+.pd-0{
+padding: 0px !important;
+}
 /* CUSTOM CSS PARA COMPONENTES DE LA PLANTILLA */
 
 /*CSS PARA BANNER PRINCIPAL -----------------------------------*/
