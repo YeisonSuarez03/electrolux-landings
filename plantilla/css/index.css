@@ -8,10 +8,22 @@
     --electrolux-bg-primary: #193159; 
     --electrolux-bg-gray: #7b8a9a; 
     --electrolux-bg-dark: #191820; 
-    --electrolux-bg-gray-light: #acbac1; 
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-gray-light-2:#e0e9eb; 
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
-    --electrolux-bg-primary-light: #dde8ea; 
+    --electrolux-bg-primary-light: #dde8ea;  
+    --electrolux-bg-items-text: 1.1vw;
+    --electrolux-bg-title: 3vw;
+    --electrolux-bg-text: 1.43vw;
+    --electrolux-bg-plus-title: 1.3vw;
+    --electrolux-bg-plus-text: 1.1vw;
+    --electrolux-bg-guaranty: 1vw;
+    --electrolux-bg-lineheight: 1.25;
+    --electrolux-bg-general-info: 1.5vw;
+    --electrolux-bg-max-width-table: 20vw;
+    --electrolux-bg-table-title: 1.1vw;
+    --electrolux-bg-table-item: 1.1vw;
 }
 
 /*configuracion de colores con variables*/
@@ -126,7 +138,7 @@ bold{
 
 .containerImgCortada{
     min-height: 600px;
-    max-height: 615px;
+    max-height: 710px;
     height: 100%;
     overflow: hidden;
 }
@@ -293,6 +305,373 @@ bold{
     }
 }
 
+
+.carousel-001-1 .carousel-inner {
+    background: var(--electrolux-bg-gray)!important;
+    max-height: 750px;
+}
+
+.carousel-001-1 .row>* {
+  padding-left: 0%!important;
+    
+}
+
+.carousel-002-1 .carousel-inner {
+    background: #031d4d!important;
+    max-height: 750px;
+}
+
+.white{
+    color: white;
+}
+
+.gray-white{
+    color: #adbbc1;
+}
+
+.banner {
+    font-size: 1.9vw;
+}
+
+
+.banner-subtitle {
+    font-size: 1.3vw;
+}
+
+
+.cardsCirculares span {
+    margin-bottom: -1%;
+    font-size: var(--electrolux-bg-items-text);
+}
+
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
+
+@media screen and (max-width: 767.98px){
+.detailsInfoDiv {
+    max-width: initial;
+}
+}
+
+@media (max-width:768px){
+    .banner {
+        font-size: 30px;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px;
+    }
+
+    }   
+
+
+/*CLASES DE FUENTES GENERALES*/
+
+.title{
+    font-size: var(--electrolux-bg-title);
+}
+
+.text{
+    font-size: var(--electrolux-bg-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.plus-title{
+    font-size: var(--electrolux-bg-plus-title);
+}
+
+.plus-text{
+    font-size: var(--electrolux-bg-plus-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.general-info{
+    font-size: var(--electrolux-bg-general-info);
+}
+
+
+.guaranty{
+    font-size: var(--electrolux-bg-guaranty);
+}
+
+.bg-electrolux-gray-light-2 {
+    background: var(--electrolux-bg-gray-light-2);
+}
+
+.table-title {
+    font-size: var(--electrolux-bg-table-title);
+}
+
+.table-item {
+    font-size: var(--electrolux-bg-table-item);
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px){
+    .title{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 15px;
+        
+    }
+    
+    .plus-title{
+        font-size: 20px;
+    }
+    
+    .plus-text{
+        font-size: 15px;
+        
+    }
+    
+    .general-info{
+        font-size: 20px;
+    }
+    
+    
+    .guaranty{
+        font-size: 12px;
+    }
+    
+    
+    .table-title {
+        font-size: 15px;
+    }
+    
+    .table-item {
+        font-size: 12px;
+    }
+
+    .cardsCirculares span{
+        font-size: 20px;
+    }
+
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 15px;
+    }
+
+    .cardsCirculares img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* FEATURED  SLIDER */
+.carousel-inner .carousel-item {
+    transition: transform 1s ease !important;
+}
+
+
+.c-s>img {
+    width: 90%;
+    object-fit: cover;
+    height: 100%;
+    font-size: 16px;
+}
+
+
+.Carousel-f{
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 767px) {
+    .s-h3 {
+        font-size: 2.7rem;
+        margin-bottom: 10px !important;
+    }
+
+    .s-p {
+        font-size: 1.4rem;
+    }
+
+    .s-p2 {
+        font-size: 1.1rem;
+    }
+    .img-g2{
+        display: none;
+    }
+    .div-sl {
+        padding-bottom: 20px;
+    }
+
+    .Carousel-f{
+        justify-content: flex-end;
+        padding-right: 1px !important;
+    }
+    .img-g3{
+        width: 24%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .img-g3{
+       display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .s-h3 {
+        font-size: 1.6rem;
+        margin-bottom: 9px !important;
+    }
+
+    .s-p {
+        font-size: 1.1rem;
+    }
+
+    .s-p2 {
+        font-size: 0.9rem;
+    }
+    .img-g2{
+        width: 100%;
+        align-self: start !important;
+
+    }
+
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .s-h3 {
+        font-size: 2.7rem;
+        margin-bottom: 10px !important;
+    }
+
+    .s-p {
+        font-size: 1.4rem;
+    }
+
+    .s-p2 {
+        font-size: 1.1rem;
+    }
+    .img-g2{
+        width: 90px;
+        align-self: start !important;
+
+    }
+
+}
+@media (min-width:1501px)  {
+    .s-h3 {
+        font-size: 3rem;
+        margin-bottom: 25px !important;
+    }
+
+    .s-p {
+        font-size: 1.8rem;
+    }
+
+    .s-p2 {
+        font-size: 1.3rem;
+    }
+    .img-g2{
+        width: 90px;
+        align-self: start !important;
+
+    }
+
+}
+
+.Carousel-f .active {
+    background-color: var(--electrolux-text-primary);
+}
+
+.Carousel-f [data-bs-target] {
+    opacity: 1;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+
+}
+
+
+.Col-Eq {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+
+/* FIN  FEATURED  SLIDER */
+
+/*   SLIDER */
+.xd{
+    border: 1px solid white;
+}
+
+
+.img-Slider{
+    padding: 50px 0px;
+}
+
+.div_text2{
+
+    padding: 100px 30px;
+    }
+
+    @media screen and (min-width: 1600px) {
+
+        .div_text2{
+        
+            width: 60%;
+            }
+        }
+    
+        @media screen and (max-width: 992px) {
+
+            .div_text2{
+
+                padding: 20px 15px;
+                }
+
+                .img-g2{
+                    margin: 0px 0px 60px 0px !important;
+                }
+            
+                
+            }
+    
+
+.img-Slider > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    .carousel-control-next{
+
+    }
+
+
+    @media screen and (max-width: 991px) {
+
+        .slider-1{
+            justify-content: center;
+        }
+
+        .slider-2{
+            justify-content: center;
+        }
+    
+    }
+    
+    @media screen and (min-width: 992px) {
+
+        .slider-1{
+            justify-content: end;
+        }
+        .slider-2{
+            justify-content: start;
+        }
+    }
+    
+/* FIN SLIDER */
 
 
 
