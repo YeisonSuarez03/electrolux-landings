@@ -477,7 +477,7 @@ padding: 0%!important;
     left: 10%;
     bottom: 10%;
     position: absolute;
-    max-width: 43em;
+    max-width: 38vw;
 }
 
 .gray-white{
@@ -498,7 +498,7 @@ padding: 0%!important;
 }
 
 .p12{
-    padding: 12rem;
+    padding: 9rem;
 }
 
 .banner {
@@ -507,7 +507,16 @@ padding: 0%!important;
 
 
 .banner-subtitle {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
 }
 
 /*CLASES DE FUENTES GENERALES*/
@@ -560,7 +569,7 @@ padding: 0%!important;
     }
     
     .text{
-        font-size: 15px;
+        font-size: 20px;
         
     }
     
@@ -603,6 +612,12 @@ padding: 0%!important;
         width: 100px;
         height: 100px;
     }
+
+    .footer{
+        font-size: 15px;
+    }
+
+    
 }
 
 
@@ -644,6 +659,12 @@ padding: 0%!important;
             max-height: 400px;
         }
 
+}
+
+@media (min-width: 1024px) and (max-width: 1600px){
+    .estufa{
+        width: 80%;
+    }
 }
 
 /* FEATURED  SLIDER */
