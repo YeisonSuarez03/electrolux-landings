@@ -13,7 +13,120 @@
     --electrolux-text-primary: #193159; 
     --electrolux-bg-primary-darken: #041e4d; 
     --electrolux-bg-primary-light: #dde8ea; 
+    --electrolux-bg-items-text: 1.1vw;
+    --electrolux-bg-title: 3vw;
+    --electrolux-bg-text: 1.43vw;
+    --electrolux-bg-plus-title: 1.3vw;
+    --electrolux-bg-plus-text: 1.1vw;
+    --electrolux-bg-guaranty: 1vw;
+    --electrolux-bg-lineheight: 1.25;
+    --electrolux-bg-general-info: 1.5vw;
+    --electrolux-bg-max-width-table: 20vw;
+    --electrolux-bg-table-title: 1.1vw;
+    --electrolux-bg-table-item: 1.1vw;
 }
+
+
+
+.title{
+    font-size: var(--electrolux-bg-title);
+}
+
+.text{
+    font-size: var(--electrolux-bg-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.plus-title{
+    font-size: var(--electrolux-bg-plus-title);
+}
+
+.plus-text{
+    font-size: var(--electrolux-bg-plus-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.general-info{
+    font-size: var(--electrolux-bg-general-info);
+}
+
+
+.guaranty{
+    font-size: var(--electrolux-bg-guaranty);
+}
+
+.bg-electrolux-gray-light-2 {
+    background: var(--electrolux-bg-gray-light-2);
+}
+
+.table-title {
+    font-size: var(--electrolux-bg-table-title);
+}
+
+.table-item {
+    font-size: var(--electrolux-bg-table-item);
+}
+
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
+
+
+
+@media (max-width: 768px){
+
+    .title{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 15px;
+        
+    }
+    
+    .plus-title{
+        font-size: 20px;
+    }
+    
+    .plus-text{
+        font-size: 15px;
+        
+    }
+    
+    .general-info{
+        font-size: 20px;
+    }
+    
+    
+    .guaranty{
+        font-size: 12px;
+    }
+    
+    
+    .table-title {
+        font-size: 15px;
+    }
+    
+    .table-item {
+        font-size: 12px;
+    }
+
+    .cardsCirculares span{
+        font-size: 20px;
+    }
+
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 15px;
+    }
+
+    .cardsCirculares img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
 
 /*configuracion de colores con variables*/
 .bg-electrolux-primary{
@@ -70,7 +183,7 @@ bold{
 
 html {
 
-	font-size: 17px; 
+	font-size: 16px; 
 
 
 
@@ -245,6 +358,59 @@ html {
     transform: scale(.5);
 }
 
+@media screen and (max-width: 767px) {
+    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+  
+    .expansibleCards__card p.fs-6.text-electrolux-primary {
+      font-size: 1.8rem !important;
+  }
+  
+  .expansibleCards__card p.text-electrolux-primary {
+      font-size: 1rem !important;
+  }
+  }
+  @media screen and (min-width: 768px) {
+    
+  }
+  
+  @media (min-width: 768px) and (max-width: 999px) {
+      /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+  
+      .expansibleCards__card p.fs-6.text-electrolux-primary {
+          font-size: 1.1rem !important;
+      }
+      
+      .expansibleCards__card p.text-electrolux-primary {
+          font-size: 1rem !important;
+      }
+  
+  }
+  @media (min-width: 1000px) and (max-width: 1500px) {
+     /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+  
+     .expansibleCards__card p.fs-6.text-electrolux-primary {
+      font-size: 1.5rem !important;
+  }
+  
+  .expansibleCards__card p.text-electrolux-primary {
+      font-size: 1.2rem !important;
+  }
+  
+  }
+  @media (min-width:1501px)  {
+        /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
+  
+        .expansibleCards__card p.fs-6.text-electrolux-primary {
+          font-size: 1.8rem !important;
+      }
+      
+      .expansibleCards__card p.text-electrolux-primary {
+          font-size: 1.4rem !important;
+          text-align: center;
+      }
+  
+  }
+  
 
 /*CSS PARA IMAGEN FONDO COMPLETO */
 
@@ -283,10 +449,7 @@ html {
     width: 20px;
 }
 
-.detailsInfoDiv{
-    width: 100%;
-    max-width: 13rem;
-}
+
 
 /*FIN CSS PARA SECCION DE INFORMACION TECNICA */
 
@@ -382,16 +545,6 @@ html {
 
     /*FIN MEDIA QUERY SECCION CON IMGS CIRCULARES */
 
-    /*MEDIA QUERY SECCION CARDS EXPANDIBLES */
-
-    .expansibleCards__card p.fs-6.text-electrolux-primary{
-        font-size: 2.5rem !important;
-    }
-    .expansibleCards__card p.text-electrolux-primary{
-        font-size: 1.2rem !important;
-    }
-
-    /*FIN MEDIA QUERY SECCION CARDS EXPANDIBLES */
 
     /* MEDIA QUERY PARA SECCION DE INFORMACION TECNICA */
 
@@ -507,8 +660,111 @@ html {
 
 /*FIN MEDIA QUERYS ESPECIALES PARA LA SECCION IMG DER TEXTO IZQ */
 
+/*TEXTO MEDIA QUERY*/
+@media screen and (max-width: 767px) {
+    .s-h3 {
+        font-size: 2.7rem;
+        margin-bottom: 10px !important;
+    }
+
+    .s-p {
+        font-size: 1.4rem;
+    }
+
+    .s-p2 {
+        font-size: 1.1rem;
+    }
+    .img-g2{
+        display: none;
+    }
+    .div-sl {
+        padding-bottom: 20px;
+    }
+
+    .Carousel-f{
+        justify-content: flex-end;
+        padding-right: 1px !important;
+    }
+    .img-g3{
+        width: 24%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .img-g3{
+       display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .s-h3 {
+        font-size: 1.6rem;
+        margin-bottom: 9px !important;
+    }
+
+    .s-p {
+        font-size: 1.1rem;
+    }
+
+    .s-p2 {
+        font-size: 0.9rem;
+    }
+    .img-g2{
+        width: 100%;
+        align-self: start !important;
+
+    }
+
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .s-h3 {
+        font-size: 2.7rem;
+        margin-bottom: 10px !important;
+    }
+
+    .s-p {
+        font-size: 1.4rem;
+    }
+
+    .s-p2 {
+        font-size: 1.1rem;
+    }
+    .img-g2{
+        width: 90px;
+        align-self: start !important;
+
+    }
+
+}
+@media (min-width:1501px)  {
+    .s-h3 {
+        font-size: 3rem;
+        margin-bottom: 20px !important;
+    }
+
+    .s-p {
+        font-size: 1.8rem;
+    }
+
+    .s-p2 {
+        font-size: 1.3rem;
+    }
+    .img-g2{
+        width: 90px;
+        align-self: start !important;
+
+    }
+
+}
+
+/*FIN TEXTO MEDIA QUERY */
 
 
 
 
+
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
+}
 
