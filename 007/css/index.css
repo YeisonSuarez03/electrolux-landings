@@ -76,19 +76,28 @@
 
 @media (max-width: 768px){
 
+    .banner {
+        font-size: 30px !important;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px !important;
+    }
+
     .title{
         font-size: 30px;
     }
     
     .text{
-        font-size: 15px;
+        font-size: 20px;
         
     }
     
     .plus-title{
         font-size: 20px;
     }
-    
+
     .plus-text{
         font-size: 15px;
         
@@ -123,6 +132,10 @@
     .cardsCirculares img{
         width: 100px;
         height: 100px;
+    }
+    .backgroundSection .textBoxCambios {
+        position: initial !important;
+        max-width: initial !important;
     }
 }
 
@@ -762,9 +775,37 @@ html {
 
 
 
+.imgFondoCompleto .img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .footer{
     text-align: right;
     font-size: 1.1vw;
+} 
+
+.backgroundSection .textBoxCambios {
+	left: 10%;
+	bottom: 10%;
+	position: absolute;
+	max-width: 38vw;
+    opacity: .95;
 }
 
+.banner-subtitle {
+    font-size: 1.5vw;
+}
+.banner {
+	font-size: 2.1vw;
+}
+.gray-white {
+	color: #adbbc1;
+}
+.banner-subtitle {
+	font-size: 1.5vw;
+}
+
+.bold {
+	font-weight: 600;
+}
