@@ -28,10 +28,7 @@
 
 html {
 
-    font-size: 16px;
-
-
-
+    font-size: 16px
 }
 
 
@@ -43,6 +40,10 @@ html {
 .text{
     font-size: var(--electrolux-bg-text);
     line-height: var(--electrolux-bg-lineheight);
+}
+
+.text-electrolux-white{
+    color: var(--electrolux-bg-primary-light)
 }
 
 .plus-title{
@@ -505,6 +506,11 @@ color: var(--electrolux-bg-primary-light) !important;
     /* FIN MEDIA QUERY PARA SECCION DE TABS */
 
 
+    .div_text {
+
+        width: 100%;
+    }
+
 
     
 
@@ -604,6 +610,32 @@ color: var(--electrolux-bg-primary-light) !important;
     
     .footer{
         font-size: 15px;
+    }
+
+
+}
+
+/* ESTILOS ESPECIALES DIV_TEXT */
+
+.div_text {
+
+    padding: 100px 30px;
+}
+
+@media screen and (min-width: 1600px) {
+
+    .div_text {
+
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .img_style {
+        object-position: left;
+
     }
 
 
