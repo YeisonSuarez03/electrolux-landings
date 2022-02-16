@@ -84,15 +84,17 @@
 
 
 
+<!--FIN SECCION IMG DE FONDO AZUL-->
+
 
   <!--SLIDER FEATURED-->
-  <div  id="carousel-ftd" class="carousel slide carousel-slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+  <div  id="carousel-ftd" class="carousel slide carousel-slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false">
     <div class="carousel-inner">
       <div class="carousel-indicators Carousel-f ">
         <button type="button" data-bs-target="#carousel-ftd" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
         <button type="button" data-bs-target="#carousel-ftd" data-bs-slide-to="1" aria-label="Slide 2" ></button>
       </div>
-     <div class="carousel-item active " >
+      <div class="carousel-item  active " >
        
         <div class="row w-100 m-0 p-0   ">
           <div class="col-md-6 col-12 pd-0 d-flex ">
@@ -101,12 +103,12 @@
             </div>
           </div>
           <div class="col-md-6 col-12  bg-electrolux-primary-light-2 d-flex justify-content-center Col-Eq div-sl  ">
-            <div  class="d-flex flex-column  justify-content-center align-self-center">
-                  <h3 class=" text-electrolux-white mb-5 title white">
-                   Elegancia <br> y versatilidad<br>en tu cocina
+            <div  class="d-flex flex-column  justify-content-center">
+                  <h3 class=" text-white mb-5 title">
+                    Elegancia <br> y versatilidad<br>en tu cocina
                   </h3>
-                  <p class="font-light text-electrolux-primary text bold">
-                    La cocina de Piso con Grill y Timer <br> Digital Electrolux 76GSR vino para <br> sorprenderte, facilitando la <br> preparación de tus alimentos e <br> incentivando la creación <br> de nuevas recetas.
+                  <p class="font-regular text-electrolux-primary text bold ">
+                    Cada parilla es individual, lo <br> que facilita la manipulación y <br> limpieza de la cocina 
                   </p>
               
               </div>
@@ -114,7 +116,9 @@
         </div>
       </section>
       </div>
-     <div class="carousel-item  ">
+    
+
+      <div class="carousel-item">
         <section >
           <div class="row w-100 m-0 p-0  ">
             <div class="col-md-6 col-12 pd-0 d-flex  ">
@@ -122,61 +126,53 @@
                 <img src="./assets/img/Forno.png" alt=""  class="img-r">
               </div>
             </div>
-            <div class="col-md-6 col-12 bg-electrolux-primary-light-2 d-flex justify-content-center justify-content-center Col-Eq div-sl " >
-              
-              <div class="row  d-flex align-items-center justify-content-center align-self-center">
+            <div class="col-md-6 col-12  bg-electrolux-primary-light-2  d-flex justify-content-center justify-content-center Col-Eq div-sl " >
+              <div class="row ">
 
-                <div class="col-12 col-lg-12 col-xl-12  d-flex  justify-content-center align-items-center div-sl">
-                  <div  class=" d-flex flex-column">      
-                    <h3 class=" text-electrolux-white mb-5 title white">
-                      Horno con interior <Br>FastClean
+                <div class="col-12 col-lg-12 col-xl-12  d-flex  justify-content-center align-items-center div-sl ">
+                  <div  class=" d-flex flex-column" style="padding-left: 15%;">      
+                    <h3 class=" white mb-5  title ">
+                      Horno con <br> interior Fast<Br>Clean
                     </h3>
-                    <p class="font-light text-electrolux-primary text bold" >
-                     Su esmaltado con la tecnología<br><b>Fast Clean,</b>Facilita la limpieza de<br>grasa y residuos dentro del horno.
+                    <p class="font-regular text-electrolux-primary text bold  " >
+                      Interior esmaltado con <br> acabado <b style="font-weight: 600;">Fast Clean</b> que <br> facilita la limpieza de residuos <br> dentro del horno.
                     </p>
                 
-                    <p class="font-light guaranty white">
+                    <p class="font-regular white text ">
                       *Garantia aplica para el recubrimiento del horno.
                     </p>
+                    <div class="d-flex align-items-center align-self-center">
+          
+                      <img src="assets/img/Garantia.png" class=" img-g3" alt="Image">
+                        
+                      </div>
                 
                     </div>
-                  
                     <div class="m-2  d-flex   align-self-start  ">
           
                       <img src="assets/img/Garantia.png" class=" img-g2" alt="Image">
                         
                       </div>
+                      
                 </div>
-               
-           
+
                 </div>
+
+                
             
             </div>
           </div>
     
       </div>
 
+    
+
     </div>
 
   </div>
   <!--FIN SLIDER FEATURED-->
-<script>
-  $(document).ready(function(){
-	var alturas = [];
-	$('div.xd').each(function(){
-		alturas.push($(this).height());
-	});
-  
-  var maximo = Math.max.apply(null, alturas)
-  
-  alert("El maximo heigth es: " + maximo);
-  
-  $('div.productos').each(function(){
-  	//Aplicamos a todos los divs la misma altura
-    $(this).height()
-  });
-});
-</script>
+
+
 
 <!--INICIO SECCION CARDS CON IMAGENES EXPANDIBLES-->
 
@@ -303,7 +299,7 @@
                     <h3 class=" text-white mb-5 title">
                       Vidrio interno <br> removible
                     </h3>
-                    <p class="s-p font-regular text-electrolux-primary bold text">
+                    <p class=" font-regular text-electrolux-primary bold text">
                       Puedes retirar el vidrio interno del <br> horno, para facilitar su limpieza                    </p>
                   </div>
                 </div>

@@ -692,9 +692,8 @@ padding: 0%!important;
     object-fit: cover;
     height: 100%;
     font-size: 16px;
-    
 }
-.pd-0{padding: 0px;}
+
 
 .Carousel-f{
     justify-content: flex-end;
@@ -727,6 +726,10 @@ padding: 0%!important;
     }
     .img-g3{
         width: 80%;
+    }
+    .backgroundSection .textBoxCambios {
+        position: initial !important;
+        max-width: initial !important;
     }
 }
 @media screen and (min-width: 768px) {
@@ -816,78 +819,73 @@ padding: 0%!important;
 
 
 /* FIN  FEATURED  SLIDER */
-
 /*   SLIDER */
-.xd{
+.xd {
     border: 1px solid white;
 }
 
 
-.img-Slider{
-    margin-bottom: 100px ;
+.img-Slider {
+    padding: 50px 0px;
 }
 
-.div_text2{
+.div_text2 {
 
-    padding: 100px 30px;
+    padding: 100px 10px;
+}
+
+@media screen and (min-width: 1600px) {
+
+    .div_text2 {
+
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .div_text2 {
+
+        padding: 20px 15px;
     }
 
-    @media screen and (min-width: 1600px) {
+  
 
-        .div_text2{
-        
-            width: 60%;
-            }
-        }
-    
-        @media screen and (max-width: 992px) {
 
-            .div_text2{
+}
 
-                padding: 20px 15px;
-                }
 
-                .img-g2{
-                    margin: 0px 0px 60px 0px !important;
-                }
-            
-                
-            }
-    
-
-.img-Slider > img {
+.img-Slider>img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
+}
+
+.carousel-control-next {}
+
+
+@media screen and (max-width: 991px) {
+
+    .slider-1 {
+        justify-content: center;
     }
-    
-    .carousel-control-next{
 
+    .slider-2 {
+        justify-content: center;
     }
 
+}
 
-    @media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) {
 
-        .slider-1{
-            justify-content: center;
-        }
-
-        .slider-2{
-            justify-content: center;
-        }
-    
+    .slider-1 {
+        justify-content: end;
     }
-    
-    @media screen and (min-width: 992px) {
 
-        .slider-1{
-            justify-content: end;
-        }
-        .slider-2{
-            justify-content: start;
-        }
+    .slider-2 {
+        justify-content: start;
     }
-    
+}
+
 /* FIN SLIDER */
-
