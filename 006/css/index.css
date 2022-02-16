@@ -302,7 +302,11 @@ bold {
         padding-right: 1px !important;
     }
     .img-g3{
-        width: 24%;
+        width: 80%;
+    }
+    .backgroundSection .textBoxCambios {
+        position: initial !important;
+        max-width: initial !important;
     }
 }
 @media screen and (min-width: 768px) {
@@ -325,7 +329,7 @@ bold {
         font-size: 0.9rem;
     }
     .img-g2{
-        width: 100%;
+        width: 70%;
         align-self: start !important;
 
     }
@@ -345,7 +349,7 @@ bold {
         font-size: 1.1rem;
     }
     .img-g2{
-        width: 90px;
+        width: 120px;
         align-self: start !important;
 
     }
@@ -365,7 +369,7 @@ bold {
         font-size: 1.3rem;
     }
     .img-g2{
-        width: 90px;
+        width: 120px;
         align-self: start !important;
 
     }
@@ -1288,4 +1292,39 @@ bold {
     }
 
     
+}
+
+/*CSS PARA IMAGEN FONDO COMPLETO */
+
+.imgFondoCompleto .img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
+} 
+
+.backgroundSection .textBoxCambios {
+	left: 10%;
+	bottom: 10%;
+	position: absolute;
+	max-width: 30vw;
+    opacity: .95;
+}
+
+.banner-subtitle {
+    font-size: 1.8vw;
+}
+.banner {
+	font-size: 2.1vw;
+}
+.gray-white {
+	color: #adbbc1;
+}
+
+
+.bold {
+	font-weight: 600;
 }
