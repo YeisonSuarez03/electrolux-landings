@@ -4,14 +4,141 @@
 }
 
 /*configuracion de variables */
-:root{
-    --electrolux-bg-primary: #193159; 
-    --electrolux-bg-gray: #7b8a9a; 
-    --electrolux-bg-dark: #191820; 
-    --electrolux-bg-gray-light: #acbac1; 
-    --electrolux-text-primary: #193159; 
-    --electrolux-bg-primary-darken: #041e4d; 
-    --electrolux-bg-primary-light: #dde8ea; 
+:root {
+    --electrolux-bg-primary: #193159;
+    --electrolux-bg-gray: #7b8a9a;
+    --electrolux-text-primary: #041f4d;
+    --electrolux-white: white;
+    --electrolux-bg-primary-darken: #041e4d;
+    --electrolux-bg-primary-light: #dde8ea;
+    --electrolux-bg-gray-light: #acbac1;
+    --electrolux-bg-black-blue: #191820;
+    --electrolux-bg-items-text: 1.1vw;
+    --electrolux-bg-title: 3vw;
+    --electrolux-bg-text: 1.43vw;
+    --electrolux-bg-plus-title: 1.3vw;
+    --electrolux-bg-plus-text: 1.1vw;
+    --electrolux-bg-guaranty: 1vw;
+    --electrolux-bg-lineheight: 1.25;
+    --electrolux-bg-general-info: 1.5vw;
+    --electrolux-bg-max-width-table: 20vw;
+    --electrolux-bg-table-title: 1.1vw;
+    --electrolux-bg-table-item: 1.1vw;
+}
+
+html {
+
+    font-size: 16px;
+
+
+
+}
+
+
+
+.title{
+    font-size: var(--electrolux-bg-title);
+}
+
+.text{
+    font-size: var(--electrolux-bg-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.plus-title{
+    font-size: var(--electrolux-bg-plus-title);
+}
+
+.plus-text{
+    font-size: var(--electrolux-bg-plus-text);
+    line-height: var(--electrolux-bg-lineheight);
+}
+
+.general-info{
+    font-size: var(--electrolux-bg-general-info);
+}
+
+
+.guaranty{
+    font-size: var(--electrolux-bg-guaranty);
+}
+
+.bg-electrolux-gray-light-2 {
+    background: var(--electrolux-bg-gray-light-2);
+}
+
+.table-title {
+    font-size: var(--electrolux-bg-table-title);
+}
+
+.table-item {
+    font-size: var(--electrolux-bg-table-item);
+}
+
+.detailsInfoDiv {
+    width: 100%;
+    max-width: 20vw;
+}
+
+
+@media (max-width: 768px){
+    .banner {
+        font-size: 30px !important;
+    }
+    
+    
+    .banner-subtitle {
+        font-size: 20px !important;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 20px;
+        
+    }
+    
+    .plus-title{
+        font-size: 20px;
+    }
+    
+    .plus-text{
+        font-size: 15px;
+        
+    }
+    
+    .general-info{
+        font-size: 20px;
+    }
+    
+    
+    .guaranty{
+        font-size: 12px;
+    }
+    
+    
+    .table-title {
+        font-size: 15px;
+    }
+    
+    .table-item {
+        font-size: 12px;
+    }
+
+    .cardsCirculares span{
+        font-size: 20px;
+    }
+
+    .expansibleCards__card p.text-electrolux-primary{
+        font-size: 15px;
+    }
+
+    .cardsCirculares img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /*configuracion de colores con variables*/
@@ -230,7 +357,7 @@ color: var(--electrolux-bg-primary-light) !important;
 .carousel-item .text-electrolux-white{
     color: var(--electrolux-bg-primary-light)
 }
-.flex-column {padding: 10% 0 0 10%;}
+/* .flex-column {padding: 10% 0 0 10%;} */
 @media screen and (min-width: 991px) {
 
     .Carousel-f{
@@ -280,9 +407,18 @@ color: var(--electrolux-bg-primary-light) !important;
     width: 20px;
 }
 
-.detailsInfoDiv{
+.detailsInfoDiv {
     width: 100%;
-    max-width: 13rem;
+    max-width: 20vw;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.footer{
+    text-align: right;
+    font-size: 1.1vw;
 }
 
 /*FIN CSS PARA SECCION DE INFORMACION TECNICA */
@@ -461,5 +597,14 @@ color: var(--electrolux-bg-primary-light) !important;
     }
 
     /*FIN MEDIA QUERY PARA SECCION img cortada */
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .footer{
+        font-size: 15px;
+    }
+
 
 }
